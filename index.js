@@ -29,10 +29,5 @@ function searchFlight(from,to,depart) {
 loginUser('prestontem','zeppelin');
 searchFlight('SFO','IAH','3/10/2016');
 
-driver.wait(function() {
- return driver.getTitle().then(function(title) {
-   return title === 'webdriver - Google Search';
- });
-}, 1000);
 
 driver.quit();
