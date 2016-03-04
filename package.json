@@ -1,0 +1,14 @@
+{
+  "name": "passrider",
+  "version": "1.0.0",
+  "description": "App for accessing passrider list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Preston Temple",
+  "license": "ISC",
+  "dependencies": {
+    "selenium-webdriver": "^2.52.0"
+  }
+}
