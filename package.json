@@ -9,6 +9,8 @@
   "author": "Preston Temple",
   "license": "ISC",
   "dependencies": {
-    "selenium-webdriver": "^2.52.0"
+    "express": "^4.13.4",
+    "selenium-webdriver": "^2.52.0",
+    "socket.io": "^1.4.5"
   }
 }

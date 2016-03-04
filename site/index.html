@@ -1,0 +1,26 @@
+<html ng-app="passrider">
+    <head>
+        <title>PassRider App</title>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js'></script>
+        <script src='lib/bower-angular-sanitize-master/angular-sanitize.min.js'></script>
+        <script src='https://cdn.socket.io/socket.io-1.4.5.js'></script>
+        <script src='lib/angular-socket-io-master/socket.min.js'></script>
+        <script src='/scripts/app.js'></script>
+    </head>
+    <body>
+        <div ng-controller="MainCtrl">
+            <h2>Enter flight info here</h2>
+            <form ng-submit="lookForFlight()">
+                <input type="text" ng-model="flight.from" placeholder="from">
+                <input type="text" ng-model="flight.to" placeholder="to">
+                <input type="date" ng-model="flight.date" placeholder="mm/dd/yyyy">
+                <input type="submit" class="btn-primary">
+            </form>
+            
+        </div>
+            
+        <div ng-bind-html="flights.result">
+            
+        </div>
+    </body>
+</html>
